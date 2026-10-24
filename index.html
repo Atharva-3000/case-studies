@@ -178,23 +178,33 @@ footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wr
 .toast.on { opacity: 1; transform: translate(-50%, 0); }
 
 /* icons: one set, drawn with currentColor via mask */
-.i { display: inline-block; width: 0.78em; height: 0.78em; flex: none; background: currentColor; vertical-align: -0.06em;
+.i { display: inline-block; width: 1em; height: 1em; flex: none; background: currentColor; vertical-align: -0.14em;
   -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; }
-.i-ext { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 11 11 5M6.5 5H11v4.5'/%3E%3C/svg%3E"); margin-left: 0.35em; }
-.i-r { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E"); margin-left: 0.4em; }
-.i-l { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 8H3M7 4 3 8l4 4'/%3E%3C/svg%3E"); margin-right: 0.4em; }
+.i-ext { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 11.5 11.5 4.5M5.5 4.5h6v6'/%3E%3C/svg%3E"); margin-left: 0.3em; }
+.i-r { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2.5 8h11M9 3.5 13.5 8 9 12.5'/%3E%3C/svg%3E"); margin-left: 0.4em; }
+.i-l { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13.5 8h-11M7 3.5 2.5 8 7 12.5'/%3E%3C/svg%3E"); margin-right: 0.4em; }
 .btn > .i, .go > .i, .back > .i, .cta > .i { margin: 0; }
+
+.mark .sub { color: var(--ink-3); font-weight: 400; }
+@media (max-width: 480px) { .mark .sub { display: none; } }
+header nav .pf { padding: 9px 14px; font-size: 0.88rem; }
+@media (max-width: 400px) { header nav .pf { display: none; } }
+.where { margin-top: 28px; max-width: 44rem; display: flex; align-items: center; gap: 16px 20px; flex-wrap: wrap; padding: 16px 18px; border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 10px; background: var(--paper-2); }
+.where p { flex: 1 1 22rem; font-size: 0.95rem; color: var(--ink-2); line-height: 1.5; }
+.where b { color: var(--ink); font-weight: 600; }
+.where .btn { padding: 10px 14px; font-size: 0.88rem; flex: none; }
+footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
 </style>
 </head>
 <body>
 
 <header class="top">
   <div class="wrap">
-    <a class="mark" href="./"><i>A</i>Atharva Deshmukh</a>
+    <a class="mark" href="./"><i>A</i><span>Atharva Deshmukh <span class="sub">/ Case Studies</span></span></a>
     <nav aria-label="Main">
       <a class="n" href="#work">Case studies</a>
       <a class="n" href="#documents">Resume</a>
-      <a class="n" href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Portfolio<i class="i i-ext" aria-hidden="true"></i></a>
+      <a class="btn line pf" href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Portfolio<i class="i i-ext" aria-hidden="true"></i></a>
       <a class="btn solid" href="mailto:atharvadeshmukh.dev@gmail.com?subject=Product%20Designer%20role">Email me</a>
     </nav>
   </div>
@@ -206,6 +216,10 @@ footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wr
       <span class="status"><i></i>Open to full-time product design roles · Immediate joiner</span>
       <h1>Product design, from the problem to <em>what shipped.</em></h1>
       <p class="lede">I'm Atharva, a product designer with nearly two years of shipped work across Web3, AI SaaS and EdTech. These case studies show how I frame a problem, design the edge cases, and stay with engineering until it's live.</p>
+      <div class="where">
+        <p><b>You're on my case studies site:</b> in-depth write-ups of selected projects. My portfolio is a separate site with all my work, visuals and an about page.</p>
+        <a class="btn line" href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Visit portfolio<i class="i i-ext" aria-hidden="true"></i></a>
+      </div>
       <div class="ctas">
         <a class="btn solid" href="#work">Read the case studies
           <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -320,8 +334,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wr
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Atharva Deshmukh</span>
-    <span>Ratlam, India · Remote or relocating</span>
+    <span>© 2026 Atharva Deshmukh · Case studies</span>
+    <span><a href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Portfolio<i class="i i-ext" aria-hidden="true"></i></a> · <a href="files/Atharva_Deshmukh_Resume.pdf" target="_blank" rel="noopener">Resume</a> · <a href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener">LinkedIn<i class="i i-ext" aria-hidden="true"></i></a></span>
   </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
