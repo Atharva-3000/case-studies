@@ -81,10 +81,10 @@ header nav .btn { padding: 11px 16px; font-size: 0.95rem; }
 @media (max-width: 760px) { header nav a.n { display: none; } .logo span { display: none; } }
 
 /* hero */
-.hero { padding-block: clamp(48px, 9vw, 120px) clamp(40px, 6vw, 72px); }
+.hero { padding-block: clamp(20px, 3.5vw, 48px) clamp(40px, 6vw, 72px); overflow-x: clip; }
 .status { display: inline-flex; align-items: center; gap: 10px; }
 .status i { width: 8px; height: 8px; border-radius: 50%; background: var(--live); box-shadow: 0 0 0 4px rgba(25,163,90,.15); }
-.hero h1 { margin-top: 26px; font: 700 clamp(3.2rem, 9.4vw, 8.4rem)/0.92 var(--f-sans); letter-spacing: -0.055em; text-transform: uppercase; max-width: 12ch; }
+.hero h1 { margin-top: 20px; font: 700 clamp(3.2rem, 9.4vw, 8.4rem)/0.92 var(--f-sans); letter-spacing: -0.055em; text-transform: uppercase; max-width: 12ch; }
 .hero .sub { margin-top: clamp(24px, 3.4vw, 40px); max-width: 30ch; font: 500 clamp(1.45rem, 3vw, 2.5rem)/1.12 var(--f-sans); letter-spacing: -0.055em; }
 .hero .sub span { color: var(--ink-3); }
 .hero .ctas { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 10px; }
@@ -177,6 +177,39 @@ footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wr
 footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
 .toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 20px); background: var(--ink); color: #fff; padding: 11px 18px; font-size: 0.92rem; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 50; }
 .toast.on { opacity: 1; transform: translate(-50%, 0); }
+
+/* hero with a stack of case study cards */
+.hgrid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); gap: 24px 48px; align-items: center; }
+.hero h1 { font-size: clamp(3rem, 6.8vw, 6.6rem); }
+.stack { position: relative; height: clamp(360px, 38vw, 540px); }
+.sc { position: absolute; width: 64%; aspect-ratio: 16 / 11; overflow: hidden; background: #111; text-decoration: none;
+  box-shadow: 0 30px 60px -28px rgba(0,0,0,.45), 0 0 0 1px rgba(0,0,0,.06);
+  transition: transform .7s cubic-bezier(.2,.8,.2,1), box-shadow .4s; will-change: transform; }
+.sc img { width: 100%; height: 100%; object-fit: cover; object-position: left top; }
+.sc span { position: absolute; left: 10px; bottom: 10px; font: 400 0.72rem/1 var(--f-mono); color: #fff; background: rgba(0,0,0,.78); padding: 7px 9px; letter-spacing: 0; }
+.s1 { left: 0;   top: 10%; transform: rotate(-7deg); z-index: 1; }
+.s2 { left: 12%; top: 2%;  transform: rotate(-2.5deg); z-index: 2; }
+.s3 { left: 24%; top: 16%; transform: rotate(3deg); z-index: 3; }
+.s4 { left: 36%; top: 32%; transform: rotate(7.5deg); z-index: 4; }
+.stack:hover .s1 { transform: translate(-12%, -6%) rotate(-11deg); }
+.stack:hover .s2 { transform: translate(-3%, -12%) rotate(-4deg); }
+.stack:hover .s3 { transform: translate(8%, -2%) rotate(4deg); }
+.stack:hover .s4 { transform: translate(16%, 10%) rotate(11deg); }
+.stack .sc:hover { z-index: 9; box-shadow: 0 40px 80px -30px rgba(0,0,0,.55), 0 0 0 1px rgba(0,0,0,.08); }
+.stack .s1:hover { transform: translate(-12%, -10%) rotate(-11deg) scale(1.04); }
+.stack .s2:hover { transform: translate(-3%, -16%) rotate(-4deg) scale(1.04); }
+.stack .s3:hover { transform: translate(8%, -6%) rotate(4deg) scale(1.04); }
+.stack .s4:hover { transform: translate(16%, 6%) rotate(11deg) scale(1.04); }
+@media (max-width: 1000px) { .hgrid { grid-template-columns: 1fr; } .stack { height: 64vw; max-height: 460px; margin-top: 12px; } .sc { width: 62%; } }
+@media (prefers-reduced-motion: reduce) { .sc { transition: none; } }
+
+/* social rows with brand icons */
+.socials .sn { display: inline-flex; align-items: center; gap: 14px; }
+.bi { width: 40px; height: 40px; display: grid; place-items: center; background: var(--fill); color: var(--ink); flex: none;
+  transition: background .25s, color .25s, transform .35s cubic-bezier(.3,1.6,.5,1); }
+.bi svg { width: 18px; height: 18px; fill: currentColor; }
+.socials a:hover .bi { background: var(--b); color: #fff; transform: scale(1.14) rotate(-6deg); }
+.socials a:hover { padding-left: 0; }
 </style>
 </head>
 <body>
@@ -195,7 +228,9 @@ footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
 
 <main>
   <section class="hero">
-    <div class="wrap" data-hero>
+    <div class="wrap">
+     <div class="hgrid">
+      <div class="htxt" data-hero>
       <span class="status mono"><i></i>Open to full-time product design roles · Immediate joiner</span>
       <h1>Atharva's real-world case studies</h1>
       <p class="sub">Real products I designed and shipped. <span>The problem, the decisions, the edge cases and what happened after launch.</span></p>
@@ -204,6 +239,14 @@ footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
         <a class="btn grey" href="files/Atharva_Deshmukh_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
         <a class="btn grey" href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener">LinkedIn<i class="i i-ext" aria-hidden="true"></i></a>
       </div>
+      </div>
+      <div class="stack" data-reveal="60" aria-label="Case study previews">
+        <a class="sc s1" href="dqn/#work" aria-label="DQN quest screen"><img src="dqn/img/quest.webp" width="1440" height="1080" alt=""><span>DQN · Quests</span></a>
+        <a class="sc s2" href="bango/" aria-label="Bango market page"><img src="bango/img/v2-discovery.webp" alt=""><span>Bango · Discovery</span></a>
+        <a class="sc s3" href="dqn/" aria-label="DQN profile screen"><img src="dqn/img/profile.webp" width="1440" height="1025" alt=""><span>DQN · Profile</span></a>
+        <a class="sc s4" href="bango/" aria-label="Bango discovery screen"><img src="bango/img/v2-discovery-dark.webp" alt=""><span>Bango · Live markets</span></a>
+      </div>
+     </div>
       <div class="where">
         <p><span class="mono">You're on my case studies site</span><b>In-depth write-ups of selected projects.</b> My portfolio is a separate site with all my work, visuals and an about page.</p>
         <a class="btn solid" href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Visit portfolio<i class="i i-ext" aria-hidden="true"></i></a>
@@ -335,11 +378,11 @@ footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
         </div>
       </div>
       <nav class="socials" aria-label="Profiles">
-        <a href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener"><span>Portfolio</span><span>framer.website<i class="i i-ext" aria-hidden="true"></i></span></a>
-        <a href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener"><span>LinkedIn</span><span>atharvadeshmukh3000<i class="i i-ext" aria-hidden="true"></i></span></a>
-        <a href="https://x.com/atharva_oof" target="_blank" rel="noopener"><span>X / Twitter</span><span>@atharva_oof<i class="i i-ext" aria-hidden="true"></i></span></a>
-        <a href="https://github.com/atharva-3000" target="_blank" rel="noopener"><span>GitHub</span><span>atharva-3000<i class="i i-ext" aria-hidden="true"></i></span></a>
-        <a href="https://contra.com/powxu_xd_ndbptwt9/work" target="_blank" rel="noopener"><span>Contra</span><span>work<i class="i i-ext" aria-hidden="true"></i></span></a>
+        <a href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener"><span class="sn"><i class="bi" style="--b:#0055FF" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z"/></svg></i>Portfolio</span><span>framer.website<i class="i i-ext" aria-hidden="true"></i></span></a>
+        <a href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener"><span class="sn"><i class="bi" style="--b:#0A66C2" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></i>LinkedIn</span><span>atharvadeshmukh3000<i class="i i-ext" aria-hidden="true"></i></span></a>
+        <a href="https://x.com/atharva_oof" target="_blank" rel="noopener"><span class="sn"><i class="bi" style="--b:#000000" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.4l-5.8-7.59-6.64 7.59H.47l8.6-9.83L0 1.15h7.6l5.24 6.93zM17.61 20.64h2.04L6.49 3.24H4.3z"/></svg></i>X / Twitter</span><span>@atharva_oof<i class="i i-ext" aria-hidden="true"></i></span></a>
+        <a href="https://github.com/atharva-3000" target="_blank" rel="noopener"><span class="sn"><i class="bi" style="--b:#181717" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57l-.02-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.62-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg></i>GitHub</span><span>atharva-3000<i class="i i-ext" aria-hidden="true"></i></span></a>
+        <a href="https://contra.com/powxu_xd_ndbptwt9/work" target="_blank" rel="noopener"><span class="sn"><i class="bi" style="--b:#111111" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 7.07 17.07l-2.83-2.83A6 6 0 1 1 16.24 7.76l2.83-2.83A9.97 9.97 0 0 0 12 2z"/></svg></i>Contra</span><span>work<i class="i i-ext" aria-hidden="true"></i></span></a>
       </nav>
     </div>
   </section>
