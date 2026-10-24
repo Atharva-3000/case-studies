@@ -176,6 +176,14 @@ footer { border-top: 1px solid var(--rule); padding-block: 28px calc(28px + env(
 footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; color: var(--ink-3); font-size: 0.88rem; }
 .toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 20px); background: var(--ink); color: var(--paper); padding: 10px 16px; border-radius: 999px; font-size: 0.9rem; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 50; }
 .toast.on { opacity: 1; transform: translate(-50%, 0); }
+
+/* icons: one set, drawn with currentColor via mask */
+.i { display: inline-block; width: 0.78em; height: 0.78em; flex: none; background: currentColor; vertical-align: -0.06em;
+  -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; }
+.i-ext { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 11 11 5M6.5 5H11v4.5'/%3E%3C/svg%3E"); margin-left: 0.35em; }
+.i-r { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E"); margin-left: 0.4em; }
+.i-l { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 8H3M7 4 3 8l4 4'/%3E%3C/svg%3E"); margin-right: 0.4em; }
+.btn > .i, .go > .i, .back > .i, .cta > .i { margin: 0; }
 </style>
 </head>
 <body>
@@ -186,7 +194,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wr
     <nav aria-label="Main">
       <a class="n" href="#work">Case studies</a>
       <a class="n" href="#documents">Resume</a>
-      <a class="n" href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Portfolio ↗</a>
+      <a class="n" href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Portfolio<i class="i i-ext" aria-hidden="true"></i></a>
       <a class="btn solid" href="mailto:atharvadeshmukh.dev@gmail.com?subject=Product%20Designer%20role">Email me</a>
     </nav>
   </div>
@@ -202,7 +210,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wr
         <a class="btn solid" href="#work">Read the case studies
           <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         <a class="btn line" href="files/Atharva_Deshmukh_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
-        <a class="btn line" href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn line" href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener">LinkedIn<i class="i i-ext" aria-hidden="true"></i></a>
       </div>
       <div class="facts">
         <div><b>~2 years</b><span>of shipped product design</span></div>
@@ -231,7 +239,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wr
             <div><b>6,000</b><span>active users</span></div>
             <div><b>41K+</b><span>followers on X</span></div>
           </div>
-          <span class="go">Read case study →</span>
+          <span class="go">Read case study<i class="i i-r" aria-hidden="true"></i></span>
         </div>
         <div class="pic"><img src="dqn/img/profile.webp" width="1440" height="1025" alt="DQN profile screen with an NFT identity card, BLOOD balance and collection." loading="eager"></div>
       </a>
@@ -240,17 +248,17 @@ footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wr
         <a href="https://atharva3000-portfolio.framer.website/works/bango-fun" target="_blank" rel="noopener">
           <span class="mono"><span>Bango.fun</span><span>Case study soon</span></span>
           <h3>Prediction markets for micro-communities</h3>
-          <p>Relaunch redesign and brand identity, two production versions shipped. See the project on my portfolio ↗</p>
+          <p>Relaunch redesign and brand identity, two production versions shipped. See the project on my portfolio<i class="i i-ext" aria-hidden="true"></i></p>
         </a>
         <a href="https://atharva3000-portfolio.framer.website/works" target="_blank" rel="noopener">
           <span class="mono"><span>EasyHyr</span><span>Case study soon</span></span>
           <h3>AI resume and job-finder SaaS</h3>
-          <p>Onboarding, profiles, listings and a distinct visual treatment for AI content. See it on my portfolio ↗</p>
+          <p>Onboarding, profiles, listings and a distinct visual treatment for AI content. See it on my portfolio<i class="i i-ext" aria-hidden="true"></i></p>
         </a>
         <a href="https://atharva3000-portfolio.framer.website/works/kira" target="_blank" rel="noopener">
           <span class="mono"><span>Kira</span><span>Case study soon</span></span>
           <h3>Ayurveda D2C brand and packaging</h3>
-          <p>Brand identity, packaging and a mobile-first storefront. See the project on my portfolio ↗</p>
+          <p>Brand identity, packaging and a mobile-first storefront. See the project on my portfolio<i class="i i-ext" aria-hidden="true"></i></p>
         </a>
       </div>
     </div>
@@ -300,11 +308,11 @@ footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wr
         </div>
       </div>
       <nav class="socials" aria-label="Profiles">
-        <a href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener"><span>Portfolio</span><span>framer.website ↗</span></a>
-        <a href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener"><span>LinkedIn</span><span>atharvadeshmukh3000 ↗</span></a>
-        <a href="https://x.com/atharva_oof" target="_blank" rel="noopener"><span>X / Twitter</span><span>@atharva_oof ↗</span></a>
-        <a href="https://github.com/atharva-3000" target="_blank" rel="noopener"><span>GitHub</span><span>atharva-3000 ↗</span></a>
-        <a href="https://contra.com/powxu_xd_ndbptwt9/work" target="_blank" rel="noopener"><span>Contra</span><span>work ↗</span></a>
+        <a href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener"><span>Portfolio</span><span>framer.website<i class="i i-ext" aria-hidden="true"></i></span></a>
+        <a href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener"><span>LinkedIn</span><span>atharvadeshmukh3000<i class="i i-ext" aria-hidden="true"></i></span></a>
+        <a href="https://x.com/atharva_oof" target="_blank" rel="noopener"><span>X / Twitter</span><span>@atharva_oof<i class="i i-ext" aria-hidden="true"></i></span></a>
+        <a href="https://github.com/atharva-3000" target="_blank" rel="noopener"><span>GitHub</span><span>atharva-3000<i class="i i-ext" aria-hidden="true"></i></span></a>
+        <a href="https://contra.com/powxu_xd_ndbptwt9/work" target="_blank" rel="noopener"><span>Contra</span><span>work<i class="i i-ext" aria-hidden="true"></i></span></a>
       </nav>
     </div>
   </section>

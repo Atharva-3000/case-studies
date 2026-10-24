@@ -408,13 +408,21 @@ footer .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
 @media (max-width: 760px) {
   .timeline li { grid-template-columns: 1fr; }
 }
+
+/* icons: one set, drawn with currentColor via mask */
+.i { display: inline-block; width: 0.78em; height: 0.78em; flex: none; background: currentColor; vertical-align: -0.06em;
+  -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; }
+.i-ext { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 11 11 5M6.5 5H11v4.5'/%3E%3C/svg%3E"); margin-left: 0.35em; }
+.i-r { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E"); margin-left: 0.4em; }
+.i-l { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 8H3M7 4 3 8l4 4'/%3E%3C/svg%3E"); margin-right: 0.4em; }
+.btn > .i, .go > .i, .back > .i, .cta > .i { margin: 0; }
 </style>
 </head>
 <body>
 
 <header class="bar">
   <div class="wrap">
-    <a class="back" href="../" aria-label="Back to all case studies">← <span>All case studies</span></a>
+    <a class="back" href="../" aria-label="Back to all case studies"><i class="i i-l" aria-hidden="true"></i><span>All case studies</span></a>
     <nav aria-label="Case study sections">
       <a href="#problem">Problem</a>
       <a href="#work">Work</a>
@@ -591,7 +599,7 @@ footer .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
 
       <div class="plate">
         <figure><img src="img/blood.webp" width="1543" height="767" loading="lazy" alt="The BLOOD system screen at launch: a DQN NFT silhouette earning 3 BLOOD per DQN, with a community total of 4,011 (1,377 × 3); the $ERROR token earning 1 BLOOD per 290,000 $ERROR held, with a total of 1.45B / 5,000; both feeding a BLOOD balance, with a connect wallet button."></figure>
-        <figcaption><span class="caption">The BLOOD screen as it launched, 24 Mar 2025.</span><a class="caption" href="https://x.com/dqn404/status/1904194490182823987" target="_blank" rel="noopener">View the launch post ↗</a></figcaption>
+        <figcaption><span class="caption">The BLOOD screen as it launched, 24 Mar 2025.</span><a class="caption" href="https://x.com/dqn404/status/1904194490182823987" target="_blank" rel="noopener">View the launch post<i class="i i-ext" aria-hidden="true"></i></a></figcaption>
       </div>
       <div class="rules">
         <div class="rule"><b>3 BLOOD</b><span>per DQN NFT held. Each character in your wallet adds to your standing.</span></div>
@@ -793,11 +801,11 @@ footer .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
         <h2>Every flow, <em>launched to the community</em></h2>
       </div>
       <ol class="timeline">
-        <li><time datetime="2025-02-01">01 Feb 2025</time><div><h3>Hoodie claim goes live</h3><p>Phased by holdings at drop.dqn.red: 10+ DQN get 2 free, 3+ get 1 free, then first come, first served.</p></div><a href="https://x.com/DQNorg/status/1885658807654854883" target="_blank" rel="noopener">View on X ↗</a></li>
-        <li><time datetime="2025-03-24">24 Mar 2025</time><div><h3>BLOOD system activated</h3><p>First access to the DQN network: connect your wallet and your holdings become BLOOD.</p></div><a href="https://x.com/dqn404/status/1904194490182823987" target="_blank" rel="noopener">View on X ↗</a></li>
-        <li><time datetime="2025-04-09">09 Apr 2025</time><div><h3>Multi-wallet profiles</h3><p>Link several wallets to one DQN profile, with BLOOD unified under your X username.</p></div><a href="https://x.com/dqn404/status/1909907599425998994" target="_blank" rel="noopener">View on X ↗</a></li>
-        <li><time datetime="2025-04-11">11 Apr 2025</time><div><h3>BLOOD unlocks a partner presale</h3><p>AIVA reserved presale spots for BLOOD holders, the currency's first outside utility.</p></div><a href="https://x.com/DQNorg/status/1910604354723430440" target="_blank" rel="noopener">View on X ↗</a></li>
-        <li><time datetime="2025-06-28">28 Jun 2025</time><div><h3>DQN Print drop in the shop</h3><p>300 framed prints of holders' own NFTs, max 3 per person, paid in BLOOD, $ERROR or a mix, with AVAX shipping.</p></div><a href="https://x.com/dqn404/status/1939017602480906253" target="_blank" rel="noopener">View on X ↗</a></li>
+        <li><time datetime="2025-02-01">01 Feb 2025</time><div><h3>Hoodie claim goes live</h3><p>Phased by holdings at drop.dqn.red: 10+ DQN get 2 free, 3+ get 1 free, then first come, first served.</p></div><a href="https://x.com/DQNorg/status/1885658807654854883" target="_blank" rel="noopener">View on X<i class="i i-ext" aria-hidden="true"></i></a></li>
+        <li><time datetime="2025-03-24">24 Mar 2025</time><div><h3>BLOOD system activated</h3><p>First access to the DQN network: connect your wallet and your holdings become BLOOD.</p></div><a href="https://x.com/dqn404/status/1904194490182823987" target="_blank" rel="noopener">View on X<i class="i i-ext" aria-hidden="true"></i></a></li>
+        <li><time datetime="2025-04-09">09 Apr 2025</time><div><h3>Multi-wallet profiles</h3><p>Link several wallets to one DQN profile, with BLOOD unified under your X username.</p></div><a href="https://x.com/dqn404/status/1909907599425998994" target="_blank" rel="noopener">View on X<i class="i i-ext" aria-hidden="true"></i></a></li>
+        <li><time datetime="2025-04-11">11 Apr 2025</time><div><h3>BLOOD unlocks a partner presale</h3><p>AIVA reserved presale spots for BLOOD holders, the currency's first outside utility.</p></div><a href="https://x.com/DQNorg/status/1910604354723430440" target="_blank" rel="noopener">View on X<i class="i i-ext" aria-hidden="true"></i></a></li>
+        <li><time datetime="2025-06-28">28 Jun 2025</time><div><h3>DQN Print drop in the shop</h3><p>300 framed prints of holders' own NFTs, max 3 per person, paid in BLOOD, $ERROR or a mix, with AVAX shipping.</p></div><a href="https://x.com/dqn404/status/1939017602480906253" target="_blank" rel="noopener">View on X<i class="i i-ext" aria-hidden="true"></i></a></li>
       </ol>
     </div>
   </section>
@@ -861,24 +869,24 @@ footer .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
     <div class="grid4">
       <div>
         <span class="label">This project</span>
-        <a href="https://www.figma.com/design/j4dX2wzoA5A5DTO9Fh1Nbf/DQN?node-id=13-412" target="_blank" rel="noopener">DQN design file in Figma ↗</a>
-        <a href="https://x.com/DQNorg" target="_blank" rel="noopener">DQN on X ↗</a>
-        <a href="https://x.com/dqn404" target="_blank" rel="noopener">AI-404 on X ↗</a>
-        <a href="https://x.com/dqn_anime" target="_blank" rel="noopener">DQN Anime on X ↗</a>
+        <a href="https://www.figma.com/design/j4dX2wzoA5A5DTO9Fh1Nbf/DQN?node-id=13-412" target="_blank" rel="noopener">DQN design file in Figma<i class="i i-ext" aria-hidden="true"></i></a>
+        <a href="https://x.com/DQNorg" target="_blank" rel="noopener">DQN on X<i class="i i-ext" aria-hidden="true"></i></a>
+        <a href="https://x.com/dqn404" target="_blank" rel="noopener">AI-404 on X<i class="i i-ext" aria-hidden="true"></i></a>
+        <a href="https://x.com/dqn_anime" target="_blank" rel="noopener">DQN Anime on X<i class="i i-ext" aria-hidden="true"></i></a>
       </div>
       <div>
         <span class="label">My work</span>
         <a href="../">All case studies</a>
-        <a href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Portfolio ↗</a>
-        <a href="../files/Atharva_Deshmukh_Resume.pdf" target="_blank" rel="noopener">Resume (PDF) ↗</a>
-        <a href="../files/Atharva_Deshmukh_Cover_Letter.pdf" target="_blank" rel="noopener">Cover letter (PDF) ↗</a>
+        <a href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Portfolio<i class="i i-ext" aria-hidden="true"></i></a>
+        <a href="../files/Atharva_Deshmukh_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)<i class="i i-ext" aria-hidden="true"></i></a>
+        <a href="../files/Atharva_Deshmukh_Cover_Letter.pdf" target="_blank" rel="noopener">Cover letter (PDF)<i class="i i-ext" aria-hidden="true"></i></a>
       </div>
       <div>
         <span class="label">Elsewhere</span>
-        <a href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="https://x.com/atharva_oof" target="_blank" rel="noopener">X / Twitter ↗</a>
-        <a href="https://github.com/atharva-3000" target="_blank" rel="noopener">GitHub ↗</a>
-        <a href="https://contra.com/powxu_xd_ndbptwt9/work" target="_blank" rel="noopener">Contra ↗</a>
+        <a href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener">LinkedIn<i class="i i-ext" aria-hidden="true"></i></a>
+        <a href="https://x.com/atharva_oof" target="_blank" rel="noopener">X / Twitter<i class="i i-ext" aria-hidden="true"></i></a>
+        <a href="https://github.com/atharva-3000" target="_blank" rel="noopener">GitHub<i class="i i-ext" aria-hidden="true"></i></a>
+        <a href="https://contra.com/powxu_xd_ndbptwt9/work" target="_blank" rel="noopener">Contra<i class="i i-ext" aria-hidden="true"></i></a>
       </div>
     </div>
 
