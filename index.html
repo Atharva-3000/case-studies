@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Case Studies · Atharva Deshmukh, Product Designer</title>
+<meta name="description" content="Product design case studies by Atharva Deshmukh: end-to-end flows, design systems and shipped products across Web3, AI SaaS and EdTech. Open to full-time product design roles.">
+<meta name="author" content="Atharva Deshmukh">
+<link rel="canonical" href="https://atharva-3000.github.io/case-studies/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f4f1ec" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Atharva Deshmukh · Case Studies">
+<meta property="og:title" content="Atharva Deshmukh · Product design case studies">
+<meta property="og:description" content="End-to-end product design, from the problem to what shipped. Open to full-time product design roles.">
+<meta property="og:url" content="https://atharva-3000.github.io/case-studies/">
+<meta property="og:image" content="https://atharva-3000.github.io/case-studies/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@atharva_oof">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Atharva Deshmukh","jobTitle":"Product Designer","email":"mailto:atharvadeshmukh.dev@gmail.com","url":"https://atharva-3000.github.io/case-studies/","sameAs":["https://atharva3000-portfolio.framer.website/","https://www.linkedin.com/in/atharvadeshmukh3000/","https://x.com/atharva_oof","https://github.com/atharva-3000","https://contra.com/powxu_xd_ndbptwt9/work"],"alumniOf":"Parul University"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Anton&display=swap">
+<style>
+/* The library is Atharva's own room: warm paper, ink type, one serif voice.
+   Every case study card borrows its product's palette and display face, so each one reads as a door into that world. */
+:root {
+  color-scheme: light dark;
+  --paper: #f4f1ec;
+  --paper-2: #ebe6de;
+  --ink: #171513;
+  --ink-2: #57514b;
+  --ink-3: #8a837b;
+  --rule: #d9d2c7;
+  --accent: #2f5d50;      /* deep green: a quiet signature, used sparingly */
+  --accent-ink: #f4f1ec;
+  --f-serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --f-sans: "Geist", "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "Geist Mono", ui-monospace, Menlo, monospace;
+  --wide: 72rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #121110; --paper-2: #1b1a18; --ink: #eeeae4; --ink-2: #b3ada5; --ink-3: #7d776f; --rule: #2c2a27;
+    --accent: #8cc4b0; --accent-ink: #121110;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #121110; --paper-2: #1b1a18; --ink: #eeeae4; --ink-2: #b3ada5; --ink-3: #7d776f; --rule: #2c2a27;
+  --accent: #8cc4b0; --accent-ink: #121110;
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.6 var(--f-sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3, p { margin: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
+.wrap { max-width: calc(var(--wide) + 64px); margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 720px) { .wrap { padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); } }
+.mono { font: 500 0.74rem/1.3 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+
+/* buttons */
+.btn { display: inline-flex; align-items: center; gap: 10px; font: 500 0.95rem/1 var(--f-sans); padding: 13px 18px; border-radius: 999px; text-decoration: none; border: 1px solid var(--ink); transition: background .15s, color .15s, border-color .15s; cursor: pointer; }
+.btn.solid { background: var(--ink); color: var(--paper); }
+.btn.solid:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn.line { background: transparent; color: var(--ink); border-color: var(--rule); }
+.btn.line:hover { border-color: var(--ink); }
+.btn svg { width: 16px; height: 16px; flex: none; }
+
+/* header */
+header.top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--paper) 90%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--rule); padding-top: env(safe-area-inset-top, 0px); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+.mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 600; letter-spacing: -0.01em; }
+.mark i { width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: var(--paper); display: grid; place-items: center; font: italic 400 1rem/1 var(--f-serif); }
+header nav { display: flex; align-items: center; gap: 22px; }
+header nav a.n { font-size: 0.92rem; color: var(--ink-2); text-decoration: none; }
+header nav a.n:hover { color: var(--ink); }
+header nav .btn { padding: 9px 14px; font-size: 0.88rem; }
+@media (max-width: 680px) { header nav a.n { display: none; } }
+
+/* hero */
+.hero { padding-block: clamp(56px, 10vw, 120px) clamp(48px, 7vw, 88px); }
+.status { display: inline-flex; align-items: center; gap: 10px; font-size: 0.88rem; color: var(--ink-2); padding: 7px 12px 7px 10px; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper-2); }
+.status i { width: 8px; height: 8px; border-radius: 50%; background: #2fa36b; box-shadow: 0 0 0 4px color-mix(in srgb, #2fa36b 20%, transparent); }
+.hero h1 { margin-top: 28px; font: 400 clamp(2.8rem, 7.4vw, 6rem)/0.98 var(--f-serif); letter-spacing: -0.02em; max-width: 15ch; text-wrap: balance; }
+.hero h1 em { color: var(--accent); }
+.hero .lede { margin-top: 26px; max-width: 38rem; font-size: clamp(1.08rem, 1.7vw, 1.25rem); color: var(--ink-2); line-height: 1.55; }
+.hero .ctas { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 10px; }
+.facts { margin-top: clamp(40px, 6vw, 64px); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--rule); }
+.facts > div { padding: 18px 18px 0 0; display: grid; gap: 6px; align-content: start; }
+.facts > div + div { padding-left: 18px; border-left: 1px solid var(--rule); }
+.facts b { font: 400 1.6rem/1.1 var(--f-serif); }
+.facts span { font-size: 0.9rem; color: var(--ink-2); line-height: 1.4; }
+@media (max-width: 760px) {
+  .facts { grid-template-columns: 1fr 1fr; }
+  .facts > div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .facts > div:nth-child(n+3) { margin-top: 18px; border-top: 1px solid var(--rule); }
+}
+
+/* sections */
+section.s { padding-block: clamp(56px, 8vw, 96px); border-top: 1px solid var(--rule); }
+.shead { display: flex; justify-content: space-between; align-items: end; gap: 20px; flex-wrap: wrap; margin-bottom: clamp(28px, 4vw, 44px); }
+.shead h2 { font: 400 clamp(2.1rem, 4.6vw, 3.4rem)/1 var(--f-serif); letter-spacing: -0.015em; }
+.shead p { color: var(--ink-2); max-width: 30rem; }
+
+/* case card: themed per product through custom properties */
+.case { --c-bg: #111; --c-fg: #fff; --c-dim: #aaa; --c-accent: #fff; --c-line: #333; --c-display: var(--f-serif);
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); background: var(--c-bg); color: var(--c-fg);
+  border-radius: 18px; overflow: hidden; text-decoration: none; position: relative; isolation: isolate;
+  transition: transform .25s ease, box-shadow .25s ease; box-shadow: 0 1px 0 rgba(0,0,0,.04); }
+.case:hover { transform: translateY(-3px); box-shadow: 0 24px 50px -24px rgba(0,0,0,.45); }
+@media (prefers-reduced-motion: reduce) { .case, .case:hover { transition: none; transform: none; } }
+.case .txt { padding: clamp(24px, 4vw, 44px); display: grid; gap: 18px; align-content: start; }
+.case .brand { display: flex; align-items: center; gap: 10px; font: 500 0.74rem/1 var(--f-mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-dim); }
+.case h3 { font: 400 clamp(2.2rem, 4.6vw, 3.6rem)/0.95 var(--c-display); text-transform: var(--c-case, none); letter-spacing: 0.005em; }
+.case h3 em { font-style: normal; color: var(--c-accent); }
+.case .sum { color: var(--c-dim); line-height: 1.55; max-width: 32rem; }
+.case .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.case .tags li { font: 500 0.74rem/1 var(--f-mono); padding: 7px 9px; border: 1px solid var(--c-line); color: var(--c-dim); border-radius: 4px; }
+.case .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--c-line); margin-top: 6px; }
+.case .stats div { padding: 14px 10px 0 0; display: grid; gap: 4px; }
+.case .stats div + div { padding-left: 12px; border-left: 1px solid var(--c-line); }
+.case .stats b { font: 400 clamp(1.5rem, 2.6vw, 2rem)/1 var(--c-display); color: var(--c-fg); }
+.case .stats span { font-size: 0.8rem; color: var(--c-dim); line-height: 1.3; }
+.case .go { display: inline-flex; align-items: center; gap: 10px; font: 600 0.82rem/1 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--c-bg); background: var(--c-accent); padding: 13px 16px; justify-self: start; margin-top: 6px; }
+.case .pic { position: relative; min-height: 320px; overflow: hidden; }
+.case .pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: left top; transition: transform .6s ease; }
+.case:hover .pic img { transform: scale(1.03); }
+@media (max-width: 880px) { .case { grid-template-columns: 1fr; } .case .pic { min-height: 0; aspect-ratio: 16 / 10; order: -1; } }
+
+/* DQN theme */
+.case.dqn { --c-bg: #0c0b0b; --c-fg: #efe9e4; --c-dim: #a89e98; --c-accent: #e8122d; --c-line: #2e2525; --c-display: "Anton", Impact, sans-serif; --c-case: uppercase; }
+.case.dqn .go { clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%); color: #0c0b0b; }
+.case.dqn .pic::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #0c0b0b 0%, transparent 18%); pointer-events: none; }
+@media (max-width: 880px) { .case.dqn .pic::after { background: linear-gradient(0deg, #0c0b0b 0%, transparent 25%); } }
+
+/* upcoming */
+.next { margin-top: 20px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.next a { display: grid; gap: 8px; align-content: start; padding: 20px; border: 1px dashed var(--rule); border-radius: 14px; text-decoration: none; transition: border-color .15s, background .15s; }
+.next a:hover { border-color: var(--ink-3); border-style: solid; background: var(--paper-2); }
+.next h3 { font: 400 1.6rem/1.1 var(--f-serif); }
+.next p { color: var(--ink-2); font-size: 0.93rem; line-height: 1.5; }
+.next .mono { display: flex; justify-content: space-between; gap: 10px; }
+@media (max-width: 860px) { .next { grid-template-columns: 1fr; } }
+
+/* documents */
+.docs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.doc { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; align-items: start; padding: 22px; border: 1px solid var(--rule); border-radius: 14px; background: var(--paper-2); }
+.doc .ic { width: 46px; height: 58px; border-radius: 4px; background: var(--paper); border: 1px solid var(--rule); position: relative; display: grid; place-items: end center; padding-bottom: 8px; font: 500 0.6rem/1 var(--f-mono); color: var(--ink-3); }
+.doc .ic::before { content: ""; position: absolute; top: 10px; left: 9px; right: 9px; height: 18px; background: repeating-linear-gradient(var(--rule) 0 2px, transparent 2px 6px); }
+.doc h3 { font: 600 1.05rem/1.3 var(--f-sans); }
+.doc p { color: var(--ink-2); font-size: 0.92rem; margin-top: 4px; }
+.doc .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.doc .btn { padding: 9px 14px; font-size: 0.86rem; }
+@media (max-width: 760px) { .docs { grid-template-columns: 1fr; } }
+
+/* contact */
+.contact { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
+.contact h2 { font: 400 clamp(2.4rem, 6vw, 4.4rem)/0.98 var(--f-serif); letter-spacing: -0.02em; text-wrap: balance; }
+.contact .mail { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.contact .mail a.addr { font: 400 clamp(1.25rem, 2.6vw, 1.7rem)/1.2 var(--f-serif); text-decoration-color: var(--accent); word-break: break-all; }
+.socials { display: grid; border-top: 1px solid var(--rule); }
+.socials a { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 16px 2px; border-bottom: 1px solid var(--rule); text-decoration: none; }
+.socials a:hover { color: var(--accent); }
+.socials a span:last-child { font: 400 0.84rem/1 var(--f-mono); color: var(--ink-3); }
+.socials a:hover span:last-child { color: var(--accent); }
+@media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
+
+footer { border-top: 1px solid var(--rule); padding-block: 28px calc(28px + env(safe-area-inset-bottom, 0px)); }
+footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; color: var(--ink-3); font-size: 0.88rem; }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 20px); background: var(--ink); color: var(--paper); padding: 10px 16px; border-radius: 999px; font-size: 0.9rem; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 50; }
+.toast.on { opacity: 1; transform: translate(-50%, 0); }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="./"><i>A</i>Atharva Deshmukh</a>
+    <nav aria-label="Main">
+      <a class="n" href="#work">Case studies</a>
+      <a class="n" href="#documents">Resume</a>
+      <a class="n" href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Portfolio ↗</a>
+      <a class="btn solid" href="mailto:atharvadeshmukh.dev@gmail.com?subject=Product%20Designer%20role">Email me</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="status"><i></i>Open to full-time product design roles · Immediate joiner</span>
+      <h1>Product design, from the problem to <em>what shipped.</em></h1>
+      <p class="lede">I'm Atharva, a product designer with nearly two years of shipped work across Web3, AI SaaS and EdTech. These case studies show how I frame a problem, design the edge cases, and stay with engineering until it's live.</p>
+      <div class="ctas">
+        <a class="btn solid" href="#work">Read the case studies
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn line" href="files/Atharva_Deshmukh_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        <a class="btn line" href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <div class="facts">
+        <div><b>~2 years</b><span>of shipped product design</span></div>
+        <div><b>End to end</b><span>problem, flows, system, handoff</span></div>
+        <div><b>Builds too</b><span>CS degree; prototypes in Next.js</span></div>
+        <div><b>India</b><span>remote, or relocating anywhere</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="work">
+    <div class="wrap">
+      <div class="shead">
+        <h2>Case studies</h2>
+        <p>Each one is designed in the visual language of the product it's about.</p>
+      </div>
+
+      <a class="case dqn" href="dqn/">
+        <div class="txt">
+          <span class="brand">DQN.red · Web3 collectibles · Avalanche</span>
+          <h3>Building the <em>DQN</em> ecosystem</h3>
+          <p class="sum">DQN had a homepage and a loyal NFT community, but no product. As Design Lead I designed the BLOOD loyalty system, profiles, quests, a multi-token shop and a limited merch claim on one state-driven design system.</p>
+          <ul class="tags"><li>Design Lead</li><li>Feb – Jun 2025</li><li>Design system</li><li>Checkout UX</li></ul>
+          <div class="stats">
+            <div><b>$300K+</b><span>organic presale</span></div>
+            <div><b>6,000</b><span>active users</span></div>
+            <div><b>41K+</b><span>followers on X</span></div>
+          </div>
+          <span class="go">Read case study →</span>
+        </div>
+        <div class="pic"><img src="dqn/img/profile.webp" width="1440" height="1025" alt="DQN profile screen with an NFT identity card, BLOOD balance and collection." loading="eager"></div>
+      </a>
+
+      <div class="next" aria-label="More work">
+        <a href="https://atharva3000-portfolio.framer.website/works/bango-fun" target="_blank" rel="noopener">
+          <span class="mono"><span>Bango.fun</span><span>Case study soon</span></span>
+          <h3>Prediction markets for micro-communities</h3>
+          <p>Relaunch redesign and brand identity, two production versions shipped. See the project on my portfolio ↗</p>
+        </a>
+        <a href="https://atharva3000-portfolio.framer.website/works" target="_blank" rel="noopener">
+          <span class="mono"><span>EasyHyr</span><span>Case study soon</span></span>
+          <h3>AI resume and job-finder SaaS</h3>
+          <p>Onboarding, profiles, listings and a distinct visual treatment for AI content. See it on my portfolio ↗</p>
+        </a>
+        <a href="https://atharva3000-portfolio.framer.website/works/kira" target="_blank" rel="noopener">
+          <span class="mono"><span>Kira</span><span>Case study soon</span></span>
+          <h3>Ayurveda D2C brand and packaging</h3>
+          <p>Brand identity, packaging and a mobile-first storefront. See the project on my portfolio ↗</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="documents">
+    <div class="wrap">
+      <div class="shead">
+        <h2>Resume &amp; cover letter</h2>
+        <p>One page each, updated October 2026.</p>
+      </div>
+      <div class="docs">
+        <div class="doc">
+          <span class="ic" aria-hidden="true">PDF</span>
+          <div>
+            <h3>Resume</h3>
+            <p>Experience, skills and awards. Single column, ATS-friendly.</p>
+            <div class="row">
+              <a class="btn solid" href="files/Atharva_Deshmukh_Resume.pdf" target="_blank" rel="noopener">View</a>
+              <a class="btn line" href="files/Atharva_Deshmukh_Resume.pdf" download>Download</a>
+            </div>
+          </div>
+        </div>
+        <div class="doc">
+          <span class="ic" aria-hidden="true">PDF</span>
+          <div>
+            <h3>Cover letter</h3>
+            <p>How I work and what I'm looking for in a product team.</p>
+            <div class="row">
+              <a class="btn solid" href="files/Atharva_Deshmukh_Cover_Letter.pdf" target="_blank" rel="noopener">View</a>
+              <a class="btn line" href="files/Atharva_Deshmukh_Cover_Letter.pdf" download>Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="contact">
+    <div class="wrap contact">
+      <div>
+        <span class="mono">Contact</span>
+        <h2 style="margin-top:14px">Hiring a product designer? Let's talk.</h2>
+        <div class="mail">
+          <a class="addr" id="mail" href="mailto:atharvadeshmukh.dev@gmail.com?subject=Product%20Designer%20role">atharvadeshmukh.dev@gmail.com</a>
+          <button class="btn line" type="button" id="copy" data-copy="atharvadeshmukh.dev@gmail.com">Copy</button>
+        </div>
+      </div>
+      <nav class="socials" aria-label="Profiles">
+        <a href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener"><span>Portfolio</span><span>framer.website ↗</span></a>
+        <a href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener"><span>LinkedIn</span><span>atharvadeshmukh3000 ↗</span></a>
+        <a href="https://x.com/atharva_oof" target="_blank" rel="noopener"><span>X / Twitter</span><span>@atharva_oof ↗</span></a>
+        <a href="https://github.com/atharva-3000" target="_blank" rel="noopener"><span>GitHub</span><span>atharva-3000 ↗</span></a>
+        <a href="https://contra.com/powxu_xd_ndbptwt9/work" target="_blank" rel="noopener"><span>Contra</span><span>work ↗</span></a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Atharva Deshmukh</span>
+    <span>Ratlam, India · Remote or relocating</span>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  var btn = document.getElementById('copy'), toast = document.getElementById('toast');
+  function show(msg) { toast.textContent = msg; toast.classList.add('on'); clearTimeout(show.t); show.t = setTimeout(function () { toast.classList.remove('on'); }, 1800); }
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    var text = btn.getAttribute('data-copy');
+    function fallback() { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); show('Selected. Press Ctrl/Cmd + C'); }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { btn.textContent = 'Copied'; show('Email copied'); setTimeout(function () { btn.textContent = 'Copy'; }, 1800); }, fallback);
+    } else { fallback(); }
+  });
+})();
+</script>
+</body>
+</html>

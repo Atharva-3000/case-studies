@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atharva-3000.github.io/case-studies/sitemap.xml
