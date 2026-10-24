@@ -8,7 +8,9 @@
 <meta name="author" content="Atharva Deshmukh">
 <meta name="theme-color" content="#0c0b0b">
 <link rel="canonical" href="https://atharva-3000.github.io/case-studies/dqn/">
-<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/icon-a.png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../assets/icon-b.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Atharva Deshmukh · Case Studies">
 <meta property="og:title" content="Building the DQN ecosystem · Product design case study">
@@ -46,6 +48,7 @@
 }
 * { box-sizing: border-box; }
 html { background: var(--ink); }
+html.lenis, html.lenis body { height: auto; }
 body {
   background: var(--ink);
   color: var(--bone);
@@ -443,6 +446,7 @@ footer .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
+      <div data-hero>
       <div class="file">
         <span class="tag">Case study</span>
         <span class="label">DQN.red <b>/</b> Web3 collectibles &amp; community <b>/</b> Avalanche</span>
@@ -456,6 +460,7 @@ footer .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
         <div><dt class="label">Platform</dt><dd>Web, desktop and mobile<br>Avalanche blockchain</dd></div>
         <div><dt class="label">Team</dt><dd>Small founding team<br>Next.js + TypeScript engineers</dd></div>
       </dl>
+      </div>
 
       <div class="plate">
         <figure>
@@ -923,5 +928,9 @@ footer .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
   });
 })();
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="../assets/motion.js" defer></script>
 </body>
 </html>

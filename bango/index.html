@@ -8,7 +8,9 @@
 <meta name="author" content="Atharva Deshmukh">
 <meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://atharva-3000.github.io/case-studies/bango/">
-<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/icon-a.png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../assets/icon-b.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Atharva Deshmukh · Case Studies">
 <meta property="og:title" content="Rebuilding Bango for everyone · Product design case study">
@@ -48,7 +50,8 @@
   --r: 18px;
 }
 * { box-sizing: border-box; }
-html { background: var(--black); scroll-behavior: smooth; }
+html { background: var(--black); }
+html.lenis, html.lenis body { height: auto; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body { margin: 0; background: var(--black); color: var(--white); font: 400 1.0625rem/1.65 var(--f-sans); -webkit-font-smoothing: antialiased; }
 a { color: var(--white); text-decoration-color: var(--blue); text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
@@ -275,6 +278,7 @@ footer .fine { margin-top: 44px; display: flex; justify-content: space-between; 
 <main>
   <section class="hero">
     <div class="wrap">
+      <div data-hero>
       <div class="brandrow">
         <span class="logo"><svg aria-hidden="true"><use href="#bango-mark"/></svg>Bango</span>
         <span class="pill">Case study</span>
@@ -288,6 +292,7 @@ footer .fine { margin-top: 44px; display: flex; justify-content: space-between; 
         <div><dt class="label">Platform</dt><dd>Web + mobile web<br>Avalanche</dd></div>
         <div><dt class="label">Team</dt><dd>Founder-led startup<br>Same founder as DQN.red</dd></div>
       </dl>
+      </div>
       <figure class="shot">
         <img src="img/v2-discovery-dark.webp" width="1600" height="1111" alt="Bango discovery screen in dark mode: a featured Bitcoin market with a live price chart, and a grid of category-tinted market cards with Up and Down odds." fetchpriority="high">
       </figure>
@@ -615,5 +620,9 @@ footer .fine { margin-top: 44px; display: flex; justify-content: space-between; 
   });
 })();
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="../assets/motion.js" defer></script>
 </body>
 </html>

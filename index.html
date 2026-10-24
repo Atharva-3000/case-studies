@@ -3,17 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Case Studies · Atharva Deshmukh, Product Designer</title>
-<meta name="description" content="Product design case studies by Atharva Deshmukh: end-to-end flows, design systems and shipped products across Web3, AI SaaS and EdTech. Open to full-time product design roles.">
+<title>Atharva's Real-World Case Studies · Product Designer</title>
+<meta name="description" content="Real-world product design case studies by Atharva Deshmukh: products designed and shipped across Web3, AI SaaS and EdTech, from the first problem to launch. Open to full-time product design roles.">
 <meta name="author" content="Atharva Deshmukh">
 <link rel="canonical" href="https://atharva-3000.github.io/case-studies/">
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#f4f1ec" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/icon-a.png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="assets/icon-b.png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Atharva Deshmukh · Case Studies">
-<meta property="og:title" content="Atharva Deshmukh · Product design case studies">
-<meta property="og:description" content="End-to-end product design, from the problem to what shipped. Open to full-time product design roles.">
+<meta property="og:title" content="Atharva's real-world case studies">
+<meta property="og:description" content="Products I designed and shipped, from the first problem to launch. Open to full-time product design roles.">
 <meta property="og:url" content="https://atharva-3000.github.io/case-studies/">
 <meta property="og:image" content="https://atharva-3000.github.io/case-studies/assets/og.png">
 <meta property="og:image:width" content="1200">
@@ -23,198 +24,170 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Atharva Deshmukh","jobTitle":"Product Designer","email":"mailto:atharvadeshmukh.dev@gmail.com","url":"https://atharva-3000.github.io/case-studies/","sameAs":["https://atharva3000-portfolio.framer.website/","https://www.linkedin.com/in/atharvadeshmukh3000/","https://x.com/atharva_oof","https://github.com/atharva-3000","https://contra.com/powxu_xd_ndbptwt9/work"],"alumniOf":"Parul University"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Anton&family=DM+Sans:opsz,wght@9..40,700;9..40,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fragment+Mono&family=Anton&family=DM+Sans:opsz,wght@9..40,500;9..40,700&display=swap">
 <style>
-/* The library is Atharva's own room: warm paper, ink type, one serif voice.
-   Every case study card borrows its product's palette and display face, so each one reads as a door into that world. */
+/* Same system as the portfolio (Framer): white ground, black Inter set tight, Fragment Mono for labels,
+   square black buttons and #f5f5f5 fills. Case study cards carry their own product's palette. */
 :root {
-  color-scheme: light dark;
-  --paper: #f4f1ec;
-  --paper-2: #ebe6de;
-  --ink: #171513;
-  --ink-2: #57514b;
-  --ink-3: #8a837b;
-  --rule: #d9d2c7;
-  --accent: #2f5d50;      /* deep green: a quiet signature, used sparingly */
-  --accent-ink: #f4f1ec;
-  --f-serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
-  --f-sans: "Geist", "Helvetica Neue", Arial, sans-serif;
-  --f-mono: "Geist Mono", ui-monospace, Menlo, monospace;
-  --wide: 72rem;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #121110; --paper-2: #1b1a18; --ink: #eeeae4; --ink-2: #b3ada5; --ink-3: #7d776f; --rule: #2c2a27;
-    --accent: #8cc4b0; --accent-ink: #121110;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #121110; --paper-2: #1b1a18; --ink: #eeeae4; --ink-2: #b3ada5; --ink-3: #7d776f; --rule: #2c2a27;
-  --accent: #8cc4b0; --accent-ink: #121110;
+  color-scheme: light;
+  --bg: #ffffff;
+  --fill: #f5f5f5;
+  --ink: #000000;
+  --ink-2: #4d4d4d;
+  --ink-3: #8c8c8c;
+  --rule: #e6e6e6;
+  --live: #19a35a;
+  --f-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "Fragment Mono", ui-monospace, Menlo, monospace;
+  --wide: 80rem;
 }
 * { box-sizing: border-box; }
-html { background: var(--paper); scroll-behavior: smooth; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.6 var(--f-sans); -webkit-font-smoothing: antialiased; }
-a { color: inherit; text-underline-offset: 3px; text-decoration-thickness: 1px; }
-a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+html { background: var(--bg); }
+html.lenis, html.lenis body { height: auto; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 500 1.0625rem/1.5 var(--f-sans); letter-spacing: -0.02em; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 img { display: block; max-width: 100%; height: auto; }
 h1, h2, h3, p { margin: 0; }
 ul { margin: 0; padding: 0; list-style: none; }
-.wrap { max-width: calc(var(--wide) + 64px); margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-@media (min-width: 720px) { .wrap { padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); } }
-.mono { font: 500 0.74rem/1.3 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+.wrap { max-width: calc(var(--wide) + 80px); margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 760px) { .wrap { padding-left: max(40px, env(safe-area-inset-left, 0px)); padding-right: max(40px, env(safe-area-inset-right, 0px)); } }
+.mono { font: 400 0.8rem/1.4 var(--f-mono); letter-spacing: 0; color: var(--ink-3); }
 
-/* buttons */
-.btn { display: inline-flex; align-items: center; gap: 10px; font: 500 0.95rem/1 var(--f-sans); padding: 13px 18px; border-radius: 999px; text-decoration: none; border: 1px solid var(--ink); transition: background .15s, color .15s, border-color .15s; cursor: pointer; }
-.btn.solid { background: var(--ink); color: var(--paper); }
-.btn.solid:hover { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
-.btn.line { background: transparent; color: var(--ink); border-color: var(--rule); }
-.btn.line:hover { border-color: var(--ink); }
-.btn svg { width: 16px; height: 16px; flex: none; }
-
-/* header */
-header.top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--paper) 90%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--rule); padding-top: env(safe-area-inset-top, 0px); }
-header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
-.mark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 600; letter-spacing: -0.01em; }
-.mark i { width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: var(--paper); display: grid; place-items: center; font: italic 400 1rem/1 var(--f-serif); }
-header nav { display: flex; align-items: center; gap: 22px; }
-header nav a.n { font-size: 0.92rem; color: var(--ink-2); text-decoration: none; }
-header nav a.n:hover { color: var(--ink); }
-header nav .btn { padding: 9px 14px; font-size: 0.88rem; }
-@media (max-width: 680px) { header nav a.n { display: none; } }
-
-/* hero */
-.hero { padding-block: clamp(56px, 10vw, 120px) clamp(48px, 7vw, 88px); }
-.status { display: inline-flex; align-items: center; gap: 10px; font-size: 0.88rem; color: var(--ink-2); padding: 7px 12px 7px 10px; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper-2); }
-.status i { width: 8px; height: 8px; border-radius: 50%; background: #2fa36b; box-shadow: 0 0 0 4px color-mix(in srgb, #2fa36b 20%, transparent); }
-.hero h1 { margin-top: 28px; font: 400 clamp(2.8rem, 7.4vw, 6rem)/0.98 var(--f-serif); letter-spacing: -0.02em; max-width: 15ch; text-wrap: balance; }
-.hero h1 em { color: var(--accent); }
-.hero .lede { margin-top: 26px; max-width: 38rem; font-size: clamp(1.08rem, 1.7vw, 1.25rem); color: var(--ink-2); line-height: 1.55; }
-.hero .ctas { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 10px; }
-.facts { margin-top: clamp(40px, 6vw, 64px); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--rule); }
-.facts > div { padding: 18px 18px 0 0; display: grid; gap: 6px; align-content: start; }
-.facts > div + div { padding-left: 18px; border-left: 1px solid var(--rule); }
-.facts b { font: 400 1.6rem/1.1 var(--f-serif); }
-.facts span { font-size: 0.9rem; color: var(--ink-2); line-height: 1.4; }
-@media (max-width: 760px) {
-  .facts { grid-template-columns: 1fr 1fr; }
-  .facts > div:nth-child(3) { padding-left: 0; border-left: 0; }
-  .facts > div:nth-child(n+3) { margin-top: 18px; border-top: 1px solid var(--rule); }
-}
-
-/* sections */
-section.s { padding-block: clamp(56px, 8vw, 96px); border-top: 1px solid var(--rule); }
-.shead { display: flex; justify-content: space-between; align-items: end; gap: 20px; flex-wrap: wrap; margin-bottom: clamp(28px, 4vw, 44px); }
-.shead h2 { font: 400 clamp(2.1rem, 4.6vw, 3.4rem)/1 var(--f-serif); letter-spacing: -0.015em; }
-.shead p { color: var(--ink-2); max-width: 30rem; }
-
-/* case card: themed per product through custom properties */
-.case { --c-bg: #111; --c-fg: #fff; --c-dim: #aaa; --c-accent: #fff; --c-line: #333; --c-display: var(--f-serif);
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); background: var(--c-bg); color: var(--c-fg);
-  border-radius: 18px; overflow: hidden; text-decoration: none; position: relative; isolation: isolate;
-  transition: transform .25s ease, box-shadow .25s ease; box-shadow: 0 1px 0 rgba(0,0,0,.04); }
-.case:hover { transform: translateY(-3px); box-shadow: 0 24px 50px -24px rgba(0,0,0,.45); }
-@media (prefers-reduced-motion: reduce) { .case, .case:hover { transition: none; transform: none; } }
-.case .txt { padding: clamp(24px, 4vw, 44px); display: grid; gap: 18px; align-content: start; }
-.case .brand { display: flex; align-items: center; gap: 10px; font: 500 0.74rem/1 var(--f-mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--c-dim); }
-.case h3 { font: 400 clamp(2.2rem, 4.6vw, 3.6rem)/0.95 var(--c-display); text-transform: var(--c-case, none); letter-spacing: 0.005em; }
-.case h3 em { font-style: normal; color: var(--c-accent); }
-.case .sum { color: var(--c-dim); line-height: 1.55; max-width: 32rem; }
-.case .tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.case .tags li { font: 500 0.74rem/1 var(--f-mono); padding: 7px 9px; border: 1px solid var(--c-line); color: var(--c-dim); border-radius: 4px; }
-.case .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--c-line); margin-top: 6px; }
-.case .stats div { padding: 14px 10px 0 0; display: grid; gap: 4px; }
-.case .stats div + div { padding-left: 12px; border-left: 1px solid var(--c-line); }
-.case .stats b { font: 400 clamp(1.5rem, 2.6vw, 2rem)/1 var(--c-display); color: var(--c-fg); }
-.case .stats span { font-size: 0.8rem; color: var(--c-dim); line-height: 1.3; }
-.case .go { display: inline-flex; align-items: center; gap: 10px; font: 600 0.82rem/1 var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--c-bg); background: var(--c-accent); padding: 13px 16px; justify-self: start; margin-top: 6px; }
-.case .pic { position: relative; min-height: 320px; overflow: hidden; }
-.case .pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: left top; transition: transform .6s ease; }
-.case:hover .pic img { transform: scale(1.03); }
-@media (max-width: 880px) { .case { grid-template-columns: 1fr; } .case .pic { min-height: 0; aspect-ratio: 16 / 10; order: -1; } }
-
-/* DQN theme */
-.case.dqn { --c-bg: #0c0b0b; --c-fg: #efe9e4; --c-dim: #a89e98; --c-accent: #e8122d; --c-line: #2e2525; --c-display: "Anton", Impact, sans-serif; --c-case: uppercase; }
-.case.dqn .go { clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%); color: #0c0b0b; }
-.case.dqn .pic::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #0c0b0b 0%, transparent 18%); pointer-events: none; }
-@media (max-width: 880px) { .case.dqn .pic::after { background: linear-gradient(0deg, #0c0b0b 0%, transparent 25%); } }
-
-/* Bango theme */
-.case.bango { --c-bg: #000; --c-fg: #fff; --c-dim: #a7b0c0; --c-accent: #0d99ff; --c-line: #1c2333; --c-display: "DM Sans", "Helvetica Neue", sans-serif; }
-.case.bango h3 { font-weight: 800; letter-spacing: -0.045em; }
-.case.bango .stats b { font-weight: 800; letter-spacing: -0.03em; }
-.case.bango .go { border-radius: 999px; color: #001526; }
-.case.bango .tags li { border-radius: 999px; }
-.case.bango::before { content: ""; position: absolute; left: -10%; right: -10%; bottom: -55%; height: 90%; border-radius: 50%; background: radial-gradient(closest-side, rgba(13,153,255,.45), rgba(4,36,59,.6) 55%, transparent 75%); filter: blur(24px); z-index: -1; pointer-events: none; }
-.case.bango .pic img { object-position: left top; }
-.case + .case { margin-top: 20px; }
-
-/* upcoming */
-.next { margin-top: 20px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-.next a { display: grid; gap: 8px; align-content: start; padding: 20px; border: 1px dashed var(--rule); border-radius: 14px; text-decoration: none; transition: border-color .15s, background .15s; }
-.next a:hover { border-color: var(--ink-3); border-style: solid; background: var(--paper-2); }
-.next h3 { font: 400 1.6rem/1.1 var(--f-serif); }
-.next p { color: var(--ink-2); font-size: 0.93rem; line-height: 1.5; }
-.next .mono { display: flex; justify-content: space-between; gap: 10px; }
-@media (max-width: 860px) { .next { grid-template-columns: 1fr; } }
-
-/* documents */
-.docs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
-.doc { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; align-items: start; padding: 22px; border: 1px solid var(--rule); border-radius: 14px; background: var(--paper-2); }
-.doc .ic { width: 46px; height: 58px; border-radius: 4px; background: var(--paper); border: 1px solid var(--rule); position: relative; display: grid; place-items: end center; padding-bottom: 8px; font: 500 0.6rem/1 var(--f-mono); color: var(--ink-3); }
-.doc .ic::before { content: ""; position: absolute; top: 10px; left: 9px; right: 9px; height: 18px; background: repeating-linear-gradient(var(--rule) 0 2px, transparent 2px 6px); }
-.doc h3 { font: 600 1.05rem/1.3 var(--f-sans); }
-.doc p { color: var(--ink-2); font-size: 0.92rem; margin-top: 4px; }
-.doc .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
-.doc .btn { padding: 9px 14px; font-size: 0.86rem; }
-@media (max-width: 760px) { .docs { grid-template-columns: 1fr; } }
-
-/* contact */
-.contact { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
-.contact h2 { font: 400 clamp(2.4rem, 6vw, 4.4rem)/0.98 var(--f-serif); letter-spacing: -0.02em; text-wrap: balance; }
-.contact .mail { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-.contact .mail a.addr { font: 400 clamp(1.25rem, 2.6vw, 1.7rem)/1.2 var(--f-serif); text-decoration-color: var(--accent); word-break: break-all; }
-.socials { display: grid; border-top: 1px solid var(--rule); }
-.socials a { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 16px 2px; border-bottom: 1px solid var(--rule); text-decoration: none; }
-.socials a:hover { color: var(--accent); }
-.socials a span:last-child { font: 400 0.84rem/1 var(--f-mono); color: var(--ink-3); }
-.socials a:hover span:last-child { color: var(--accent); }
-@media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
-
-footer { border-top: 1px solid var(--rule); padding-block: 28px calc(28px + env(safe-area-inset-bottom, 0px)); }
-footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; color: var(--ink-3); font-size: 0.88rem; }
-.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 20px); background: var(--ink); color: var(--paper); padding: 10px 16px; border-radius: 999px; font-size: 0.9rem; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 50; }
-.toast.on { opacity: 1; transform: translate(-50%, 0); }
-
-/* icons: one set, drawn with currentColor via mask */
+/* icons */
 .i { display: inline-block; width: 1em; height: 1em; flex: none; background: currentColor; vertical-align: -0.14em;
   -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; }
 .i-ext { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 11.5 11.5 4.5M5.5 4.5h6v6'/%3E%3C/svg%3E"); margin-left: 0.3em; }
-.i-r { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2.5 8h11M9 3.5 13.5 8 9 12.5'/%3E%3C/svg%3E"); margin-left: 0.4em; }
-.i-l { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13.5 8h-11M7 3.5 2.5 8 7 12.5'/%3E%3C/svg%3E"); margin-right: 0.4em; }
-.btn > .i, .go > .i, .back > .i, .cta > .i { margin: 0; }
+.i-r { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2.5 8h11M9 3.5 13.5 8 9 12.5'/%3E%3C/svg%3E"); }
+.i-d { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 2.5v11M3.5 9 8 13.5 12.5 9'/%3E%3C/svg%3E"); }
 
-.mark .sub { color: var(--ink-3); font-weight: 400; }
-@media (max-width: 480px) { .mark .sub { display: none; } }
-header nav .pf { padding: 9px 14px; font-size: 0.88rem; }
-@media (max-width: 400px) { header nav .pf { display: none; } }
-.where { margin-top: 28px; max-width: 44rem; display: flex; align-items: center; gap: 16px 20px; flex-wrap: wrap; padding: 16px 18px; border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 10px; background: var(--paper-2); }
-.where p { flex: 1 1 22rem; font-size: 0.95rem; color: var(--ink-2); line-height: 1.5; }
-.where b { color: var(--ink); font-weight: 600; }
-.where .btn { padding: 10px 14px; font-size: 0.88rem; flex: none; }
+/* buttons: square, like the portfolio */
+.btn { display: inline-flex; align-items: center; gap: 10px; font: 500 1rem/1.2 var(--f-sans); letter-spacing: -0.04em; padding: 14px 20px; text-decoration: none; border: 0; cursor: pointer; transition: background .2s, color .2s; }
+.btn.solid { background: var(--ink); color: #fff; }
+.btn.solid:hover { background: #2b2b2b; }
+.btn.grey { background: var(--fill); color: var(--ink); }
+.btn.grey:hover { background: #e9e9e9; }
+.btn > .i { margin: 0; }
+
+/* header */
+header.top { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding-top: env(safe-area-inset-top, 0px); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; }
+.logo { font: 700 30px/1.1 var(--f-sans); letter-spacing: -1.8px; text-decoration: none; display: inline-flex; align-items: baseline; gap: 12px; }
+.logo span { font: 400 0.8rem/1 var(--f-mono); letter-spacing: 0; color: var(--ink-3); }
+header nav { display: flex; align-items: center; gap: 26px; }
+header nav a.n { font: 500 18px/1.1 var(--f-sans); letter-spacing: -1.08px; text-decoration: none; }
+header nav a.n:hover { opacity: .55; }
+header nav .btn { padding: 11px 16px; font-size: 0.95rem; }
+@media (max-width: 760px) { header nav a.n { display: none; } .logo span { display: none; } }
+
+/* hero */
+.hero { padding-block: clamp(48px, 9vw, 120px) clamp(40px, 6vw, 72px); }
+.status { display: inline-flex; align-items: center; gap: 10px; }
+.status i { width: 8px; height: 8px; border-radius: 50%; background: var(--live); box-shadow: 0 0 0 4px rgba(25,163,90,.15); }
+.hero h1 { margin-top: 26px; font: 700 clamp(3.2rem, 9.4vw, 8.4rem)/0.92 var(--f-sans); letter-spacing: -0.055em; text-transform: uppercase; max-width: 12ch; }
+.hero .sub { margin-top: clamp(24px, 3.4vw, 40px); max-width: 30ch; font: 500 clamp(1.45rem, 3vw, 2.5rem)/1.12 var(--f-sans); letter-spacing: -0.055em; }
+.hero .sub span { color: var(--ink-3); }
+.hero .ctas { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 10px; }
+.where { margin-top: 40px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px 28px; align-items: center; padding: 20px 22px; background: var(--fill); max-width: 56rem; }
+.where p { color: var(--ink-2); font-size: 1rem; line-height: 1.45; }
+.where p b { color: var(--ink); font-weight: 600; }
+.where .mono { display: block; margin-bottom: 6px; }
+@media (max-width: 640px) { .where { grid-template-columns: 1fr; } .where .btn { justify-self: start; } }
+
+.facts { margin-top: clamp(48px, 7vw, 88px); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--ink); }
+.facts > div { padding: 18px 20px 0 0; display: grid; gap: 4px; align-content: start; }
+.facts b { font: 700 clamp(1.5rem, 2.6vw, 2.1rem)/1.05 var(--f-sans); letter-spacing: -0.05em; }
+.facts span { color: var(--ink-2); font-size: 0.95rem; }
+@media (max-width: 760px) { .facts { grid-template-columns: 1fr 1fr; row-gap: 22px; } }
+
+/* sections */
+section.s { padding-block: clamp(64px, 9vw, 120px); }
+.shead { display: flex; justify-content: space-between; align-items: end; gap: 16px 24px; flex-wrap: wrap; margin-bottom: clamp(28px, 4vw, 48px); }
+.shead h2 { font: 500 clamp(2.4rem, 5.6vw, 4.4rem)/1 var(--f-sans); letter-spacing: -0.065em; }
+.shead p { color: var(--ink-2); max-width: 30rem; font-size: 1.05rem; }
+
+/* case study cards: each in its product's world */
+.cases { display: grid; gap: 20px; }
+.case { --c-bg: #111; --c-fg: #fff; --c-dim: #aaa; --c-accent: #fff; --c-line: #333; --c-display: var(--f-sans);
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); background: var(--c-bg); color: var(--c-fg); text-decoration: none; overflow: hidden; position: relative; }
+.case .txt { padding: clamp(24px, 4vw, 48px); display: grid; gap: 18px; align-content: start; position: relative; z-index: 1; }
+.case .idx { display: flex; justify-content: space-between; gap: 12px; font: 400 0.78rem/1.3 var(--f-mono); color: var(--c-dim); letter-spacing: 0.02em; text-transform: uppercase; }
+.case h3 { font: var(--c-weight, 400) clamp(2.3rem, 4.8vw, 3.9rem)/0.95 var(--c-display); text-transform: var(--c-case, none); letter-spacing: var(--c-ls, 0.005em); }
+.case h3 em { font-style: normal; color: var(--c-accent); }
+.case .sum { color: var(--c-dim); line-height: 1.55; max-width: 32rem; letter-spacing: -0.01em; font-weight: 400; }
+.case .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.case .tags li { font: 400 0.74rem/1 var(--f-mono); padding: 7px 9px; border: 1px solid var(--c-line); color: var(--c-dim); }
+.case .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--c-line); }
+.case .stats div { padding: 14px 10px 0 0; display: grid; gap: 4px; }
+.case .stats div + div { padding-left: 12px; border-left: 1px solid var(--c-line); }
+.case .stats b { font: var(--c-weight, 400) clamp(1.45rem, 2.4vw, 2rem)/1 var(--c-display); color: var(--c-fg); letter-spacing: var(--c-ls, 0); }
+.case .stats span { font-size: 0.8rem; color: var(--c-dim); line-height: 1.3; letter-spacing: 0; font-weight: 400; }
+.case .go { display: inline-flex; align-items: center; gap: 10px; font: 500 0.95rem/1 var(--f-sans); letter-spacing: -0.03em; color: var(--c-bg); background: var(--c-accent); padding: 14px 18px; justify-self: start; margin-top: 4px; transition: gap .25s; }
+.case:hover .go { gap: 16px; }
+.case .pic { position: relative; min-height: 360px; overflow: hidden; }
+.case .pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: left top; transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.case:hover .pic img { transform: scale(1.035); }
+@media (max-width: 900px) { .case { grid-template-columns: 1fr; } .case .pic { min-height: 0; aspect-ratio: 16 / 10; order: -1; } }
+@media (prefers-reduced-motion: reduce) { .case .pic img, .case .go { transition: none; } }
+
+.case.dqn { --c-bg: #0c0b0b; --c-fg: #efe9e4; --c-dim: #a89e98; --c-accent: #e8122d; --c-line: #2e2525; --c-display: "Anton", Impact, sans-serif; --c-case: uppercase; }
+.case.dqn .go { clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%); }
+.case.dqn .pic::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #0c0b0b, transparent 18%); }
+.case.bango { --c-bg: #000; --c-fg: #fff; --c-dim: #9aa3b5; --c-accent: #0d99ff; --c-line: #1f2333; --c-display: "DM Sans", var(--f-sans); --c-weight: 700; --c-ls: -0.035em;
+  background: radial-gradient(70rem 40rem at 0% 100%, rgba(13,153,255,.22), transparent 60%), #000; }
+.case.bango .go { border-radius: 10px; color: #fff; }
+.case.bango .pic::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #000, transparent 20%); }
+@media (max-width: 900px) { .case .pic::after { background: linear-gradient(0deg, var(--c-bg), transparent 30%) !important; } }
+
+/* more work */
+.more { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
+.more > div { background: var(--fill); padding: 20px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.more h3 { font: 600 1.15rem/1.2 var(--f-sans); letter-spacing: -0.04em; }
+.more p { color: var(--ink-2); font-size: 0.92rem; line-height: 1.45; letter-spacing: -0.01em; font-weight: 400; }
+.more .lk { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 4px; }
+.more .lk a { font-size: 0.92rem; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.more .lk a:hover { opacity: .6; }
+.more .nda { font: 400 0.78rem/1 var(--f-mono); color: var(--ink-3); }
+@media (max-width: 1000px) { .more { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .more { grid-template-columns: 1fr; } }
+
+/* documents */
+.docs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.doc { background: var(--fill); padding: 26px; display: grid; gap: 8px; }
+.doc h3 { font: 600 1.5rem/1.1 var(--f-sans); letter-spacing: -0.05em; }
+.doc p { color: var(--ink-2); font-weight: 400; letter-spacing: -0.01em; }
+.doc .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.doc .row .btn { padding: 11px 16px; font-size: 0.95rem; }
+.doc .row .btn.grey { background: #fff; }
+@media (max-width: 760px) { .docs { grid-template-columns: 1fr; } }
+
+/* contact */
+.contact { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 80px); align-items: start; }
+.contact h2 { font: 700 clamp(2.8rem, 7vw, 5.6rem)/0.92 var(--f-sans); letter-spacing: -0.06em; text-transform: uppercase; }
+.mailrow { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.mailrow a.addr { font: 500 clamp(1.25rem, 2.4vw, 1.65rem)/1.2 var(--f-sans); letter-spacing: -0.06em; text-underline-offset: 4px; text-decoration-thickness: 1.5px; word-break: break-all; }
+.socials { display: grid; border-top: 1px solid var(--ink); }
+.socials a { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--rule); text-decoration: none; font-size: 1.15rem; letter-spacing: -0.04em; }
+.socials a span:last-child { font: 400 0.82rem/1 var(--f-mono); color: var(--ink-3); letter-spacing: 0; }
+.socials a:hover { padding-left: 6px; transition: padding .2s; }
+@media (max-width: 860px) { .contact { grid-template-columns: 1fr; } }
+
+footer { padding-block: 32px calc(32px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--rule); }
+footer .wrap { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; color: var(--ink-3); font-size: 0.9rem; }
 footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 20px); background: var(--ink); color: #fff; padding: 11px 18px; font-size: 0.92rem; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 50; }
+.toast.on { opacity: 1; transform: translate(-50%, 0); }
 </style>
 </head>
 <body>
 
 <header class="top">
   <div class="wrap">
-    <a class="mark" href="./"><i>A</i><span>Atharva Deshmukh <span class="sub">/ Case Studies</span></span></a>
+    <a class="logo" href="./" aria-label="Atharva Deshmukh, case studies home">AD <span>/ case studies</span></a>
     <nav aria-label="Main">
-      <a class="n" href="#work">Case studies</a>
+      <a class="n" href="#work">Case Studies</a>
       <a class="n" href="#documents">Resume</a>
-      <a class="btn line pf" href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Portfolio<i class="i i-ext" aria-hidden="true"></i></a>
+      <a class="n" href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Portfolio<i class="i i-ext" aria-hidden="true"></i></a>
       <a class="btn solid" href="mailto:atharvadeshmukh.dev@gmail.com?subject=Product%20Designer%20role">Email me</a>
     </nav>
   </div>
@@ -222,19 +195,18 @@ footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
 
 <main>
   <section class="hero">
-    <div class="wrap">
-      <span class="status"><i></i>Open to full-time product design roles · Immediate joiner</span>
-      <h1>Product design, from the problem to <em>what shipped.</em></h1>
-      <p class="lede">I'm Atharva, a product designer with nearly two years of shipped work across Web3, AI SaaS and EdTech. These case studies show how I frame a problem, design the edge cases, and stay with engineering until it's live.</p>
-      <div class="where">
-        <p><b>You're on my case studies site:</b> in-depth write-ups of selected projects. My portfolio is a separate site with all my work, visuals and an about page.</p>
-        <a class="btn line" href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Visit portfolio<i class="i i-ext" aria-hidden="true"></i></a>
-      </div>
+    <div class="wrap" data-hero>
+      <span class="status mono"><i></i>Open to full-time product design roles · Immediate joiner</span>
+      <h1>Atharva's real-world case studies</h1>
+      <p class="sub">Real products I designed and shipped. <span>The problem, the decisions, the edge cases and what happened after launch.</span></p>
       <div class="ctas">
-        <a class="btn solid" href="#work">Read the case studies
-          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="btn line" href="files/Atharva_Deshmukh_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
-        <a class="btn line" href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener">LinkedIn<i class="i i-ext" aria-hidden="true"></i></a>
+        <a class="btn solid" href="#work">Read the case studies<i class="i i-d" aria-hidden="true"></i></a>
+        <a class="btn grey" href="files/Atharva_Deshmukh_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        <a class="btn grey" href="https://www.linkedin.com/in/atharvadeshmukh3000/" target="_blank" rel="noopener">LinkedIn<i class="i i-ext" aria-hidden="true"></i></a>
+      </div>
+      <div class="where">
+        <p><span class="mono">You're on my case studies site</span><b>In-depth write-ups of selected projects.</b> My portfolio is a separate site with all my work, visuals and an about page.</p>
+        <a class="btn solid" href="https://atharva3000-portfolio.framer.website/" target="_blank" rel="noopener">Visit portfolio<i class="i i-ext" aria-hidden="true"></i></a>
       </div>
       <div class="facts">
         <div><b>~2 years</b><span>of shipped product design</span></div>
@@ -248,90 +220,104 @@ footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
   <section class="s" id="work">
     <div class="wrap">
       <div class="shead">
-        <h2>Case studies</h2>
-        <p>Each one is designed in the visual language of the product it's about. More are on the way; their design files are linked below.</p>
+        <h2>case studies.</h2>
+        <p>Each one is designed in the visual language of the product it's about.</p>
       </div>
 
-      <a class="case dqn" href="dqn/">
-        <div class="txt">
-          <span class="brand">DQN.red · Web3 collectibles · Avalanche</span>
-          <h3>Building the <em>DQN</em> ecosystem</h3>
-          <p class="sum">DQN had a homepage and a loyal NFT community, but no product. As Design Lead I designed the BLOOD loyalty system, profiles, quests, a multi-token shop and a limited merch claim on one state-driven design system.</p>
-          <ul class="tags"><li>Design Lead</li><li>Feb – Jun 2025</li><li>Design system</li><li>Checkout UX</li></ul>
-          <div class="stats">
-            <div><b>$300K+</b><span>organic presale</span></div>
-            <div><b>6,000</b><span>active users</span></div>
-            <div><b>41K+</b><span>followers on X</span></div>
+      <div class="cases">
+        <a class="case dqn" href="dqn/">
+          <div class="txt">
+            <span class="idx"><span>01 · DQN.red</span><span>Web3 · Avalanche</span></span>
+            <h3>Building the <em>DQN</em> ecosystem</h3>
+            <p class="sum">DQN had a homepage and a loyal NFT community, but no product. As Design Lead I designed the BLOOD loyalty system, profiles, quests, a multi-token shop and a limited merch claim on one state-driven design system.</p>
+            <ul class="tags"><li>Design Lead</li><li>Feb – Jun 2025</li><li>Design system</li><li>Checkout UX</li></ul>
+            <div class="stats">
+              <div><b>$300K+</b><span>organic presale</span></div>
+              <div><b>6,000</b><span>active users</span></div>
+              <div><b>41K+</b><span>followers on X</span></div>
+            </div>
+            <span class="go">Read case study<i class="i i-r" aria-hidden="true"></i></span>
           </div>
-          <span class="go">Read case study<i class="i i-r" aria-hidden="true"></i></span>
-        </div>
-        <div class="pic"><img src="dqn/img/profile.webp" width="1440" height="1025" alt="DQN profile screen with an NFT identity card, BLOOD balance and collection." loading="eager"></div>
-      </a>
+          <div class="pic"><img src="dqn/img/profile.webp" width="1440" height="1025" alt="DQN profile screen with an NFT identity card, BLOOD balance and collection."></div>
+        </a>
 
-
-      <a class="case bango" href="bango/">
-        <div class="txt">
-          <span class="brand">Bango.fun · Prediction markets · Avalanche</span>
-          <h3>Rebuilding Bango for <em>everyone</em></h3>
-          <p class="sum">A prediction market for micro-communities. I created the brand and led the relaunch, turning a wallet-first trading screen into social login, gasless bets and an XP economy anyone can play.</p>
-          <ul class="tags"><li>Design Lead</li><li>Jul – Nov 2025</li><li>Brand identity</li><li>Relaunch</li></ul>
-          <div class="stats">
-            <div><b>$10K</b><span>Retro9000 grant</span></div>
-            <div><b>2</b><span>versions shipped</span></div>
-            <div><b>$0</b><span>gas to bet</span></div>
+        <a class="case bango" href="bango/">
+          <div class="txt">
+            <span class="idx"><span>02 · Bango.fun</span><span>Prediction markets · Avalanche</span></span>
+            <h3>Rebuilding Bango <em>for everyone</em></h3>
+            <p class="sum">I led the relaunch of Bango, a prediction market for micro-communities: a new brand, a calmer market UI, social login instead of wallet-first onboarding, and XP rewards that bring people back.</p>
+            <ul class="tags"><li>Design Lead</li><li>Jul – Nov 2025</li><li>Brand identity</li><li>Product redesign</li></ul>
+            <div class="stats">
+              <div><b>$10K</b><span>Retro9000 grant</span></div>
+              <div><b>2</b><span>production versions</span></div>
+              <div><b>Gasless</b><span>social-login betting</span></div>
+            </div>
+            <span class="go">Read case study<i class="i i-r" aria-hidden="true"></i></span>
           </div>
-          <span class="go">Read case study<i class="i i-r" aria-hidden="true"></i></span>
-        </div>
-        <div class="pic"><img src="bango/img/v2-discovery-dark.webp" width="1600" height="1111" alt="Bango discovery screen with a live Bitcoin market and category-tinted market cards." loading="lazy"></div>
-      </a>
-
-      <div class="next" aria-label="More work">
-        <a href="https://www.figma.com/design/iqWsjiX1TN7HHuUaYY8eEY/Clover-Studio-x-EasyHyr?node-id=4-3" target="_blank" rel="noopener">
-          <span class="mono"><span>EasyHyr</span><span>Case study soon</span></span>
-          <h3>AI resume and job-finder SaaS</h3>
-          <p>Onboarding, profiles, listings and a distinct visual treatment for AI content. View the Figma file<i class="i i-ext" aria-hidden="true"></i></p>
-        </a>
-        <a href="https://drive.google.com/drive/folders/1M7HQSPicQw6VbpqW7sXHerRkUj8fvo_8?usp=drive_link" target="_blank" rel="noopener">
-          <span class="mono"><span>Kira</span><span>Case study soon</span></span>
-          <h3>Ayurveda D2C brand and packaging</h3>
-          <p>Brand identity, packaging and a mobile-first storefront. View the design files<i class="i i-ext" aria-hidden="true"></i></p>
-        </a>
-        <a href="https://drive.google.com/drive/folders/1bnSR2-kqH_fxSA1QKFzos3JuR-R6PkKQ?usp=drive_link" target="_blank" rel="noopener">
-          <span class="mono"><span>FlyAnyTrip</span><span>Case study soon</span></span>
-          <h3>Travel brand logo revamp and demo site</h3>
-          <p>A refreshed logo system and a full demo website. View the design files<i class="i i-ext" aria-hidden="true"></i></p>
+          <div class="pic"><img src="bango/img/v2-discovery-dark.webp" width="1600" height="1111" alt="Bango market discovery screen with live prediction cards."></div>
         </a>
       </div>
     </div>
   </section>
 
-  <section class="s" id="documents">
+  <section class="s" style="padding-top:0">
     <div class="wrap">
       <div class="shead">
-        <h2>Resume &amp; cover letter</h2>
+        <h2>more work.</h2>
+        <p>Projects without a full write-up yet. Each has a project page on my portfolio and its design files.</p>
+      </div>
+      <div class="more">
+        <div>
+          <span class="mono">AI SaaS · 2026</span>
+          <h3>EasyHyr</h3>
+          <p>AI resume and job-finder platform: onboarding, profiles, listings and a distinct visual treatment for AI content.</p>
+          <div class="lk"><a href="https://atharva3000-portfolio.framer.website/works/easyhyr" target="_blank" rel="noopener">Project page</a><a href="https://www.figma.com/design/iqWsjiX1TN7HHuUaYY8eEY/Clover-Studio-x-EasyHyr?node-id=4-3" target="_blank" rel="noopener">Figma file</a></div>
+        </div>
+        <div>
+          <span class="mono">EdTech · 2026 – now</span>
+          <h3>EdTech training platform</h3>
+          <p>Sole designer and builder of an LMS with Admin, Trainer and Student journeys for a Singapore consultancy.</p>
+          <div class="lk"><a href="https://atharva3000-portfolio.framer.website/works/edtech-platform" target="_blank" rel="noopener">Project page</a><span class="nda">Files under NDA</span></div>
+        </div>
+        <div>
+          <span class="mono">D2C brand · 2026</span>
+          <h3>Kira</h3>
+          <p>Ayurveda D2C brand identity, packaging and a mobile-first storefront.</p>
+          <div class="lk"><a href="https://atharva3000-portfolio.framer.website/works/kira" target="_blank" rel="noopener">Project page</a><a href="https://drive.google.com/drive/folders/1M7HQSPicQw6VbpqW7sXHerRkUj8fvo_8" target="_blank" rel="noopener">Design files</a></div>
+        </div>
+        <div>
+          <span class="mono">Travel · Brand + web</span>
+          <h3>FlyAnyTrip</h3>
+          <p>Logo revamp and a full demo website for a travel brand.</p>
+          <div class="lk"><a href="https://atharva3000-portfolio.framer.website/works/flyanytrip" target="_blank" rel="noopener">Project page</a><a href="https://drive.google.com/drive/folders/1bnSR2-kqH_fxSA1QKFzos3JuR-R6PkKQ" target="_blank" rel="noopener">Design files</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="documents" style="background:var(--fill)">
+    <div class="wrap">
+      <div class="shead">
+        <h2>resume &amp; cover letter.</h2>
         <p>One page each, updated October 2026.</p>
       </div>
       <div class="docs">
-        <div class="doc">
-          <span class="ic" aria-hidden="true">PDF</span>
-          <div>
-            <h3>Resume</h3>
-            <p>Experience, skills and awards. Single column, ATS-friendly.</p>
-            <div class="row">
-              <a class="btn solid" href="files/Atharva_Deshmukh_Resume.pdf" target="_blank" rel="noopener">View</a>
-              <a class="btn line" href="files/Atharva_Deshmukh_Resume.pdf" download>Download</a>
-            </div>
+        <div class="doc" style="background:#fff">
+          <span class="mono">PDF · 1 page</span>
+          <h3>Resume</h3>
+          <p>Experience, skills and awards. Single column, ATS-friendly.</p>
+          <div class="row">
+            <a class="btn solid" href="files/Atharva_Deshmukh_Resume.pdf" target="_blank" rel="noopener">View</a>
+            <a class="btn grey" style="background:var(--fill)" href="files/Atharva_Deshmukh_Resume.pdf" download>Download</a>
           </div>
         </div>
-        <div class="doc">
-          <span class="ic" aria-hidden="true">PDF</span>
-          <div>
-            <h3>Cover letter</h3>
-            <p>How I work and what I'm looking for in a product team.</p>
-            <div class="row">
-              <a class="btn solid" href="files/Atharva_Deshmukh_Cover_Letter.pdf" target="_blank" rel="noopener">View</a>
-              <a class="btn line" href="files/Atharva_Deshmukh_Cover_Letter.pdf" download>Download</a>
-            </div>
+        <div class="doc" style="background:#fff">
+          <span class="mono">PDF · 1 page</span>
+          <h3>Cover letter</h3>
+          <p>How I work and what I'm looking for in a product team.</p>
+          <div class="row">
+            <a class="btn solid" href="files/Atharva_Deshmukh_Cover_Letter.pdf" target="_blank" rel="noopener">View</a>
+            <a class="btn grey" style="background:var(--fill)" href="files/Atharva_Deshmukh_Cover_Letter.pdf" download>Download</a>
           </div>
         </div>
       </div>
@@ -341,11 +327,11 @@ footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
   <section class="s" id="contact">
     <div class="wrap contact">
       <div>
-        <span class="mono">Contact</span>
+        <span class="mono">contact.</span>
         <h2 style="margin-top:14px">Hiring a product designer? Let's talk.</h2>
-        <div class="mail">
+        <div class="mailrow">
           <a class="addr" id="mail" href="mailto:atharvadeshmukh.dev@gmail.com?subject=Product%20Designer%20role">atharvadeshmukh.dev@gmail.com</a>
-          <button class="btn line" type="button" id="copy" data-copy="atharvadeshmukh.dev@gmail.com">Copy</button>
+          <button class="btn grey" type="button" id="copy" data-copy="atharvadeshmukh.dev@gmail.com">Copy</button>
         </div>
       </div>
       <nav class="socials" aria-label="Profiles">
@@ -381,5 +367,9 @@ footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
   });
 })();
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="assets/motion.js" defer></script>
 </body>
 </html>
