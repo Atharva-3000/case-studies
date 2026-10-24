@@ -6,6 +6,7 @@ Product design case studies, hosted on GitHub Pages: **https://atharva-3000.gith
 | --- | --- |
 | Library (home) | `/` |
 | DQN.red: Building the DQN ecosystem | `/dqn/` |
+| Bango.fun: Rebuilding Bango for everyone | `/bango/` |
 | Resume (PDF) | `/files/Atharva_Deshmukh_Resume.pdf` |
 | Cover letter (PDF) | `/files/Atharva_Deshmukh_Cover_Letter.pdf` |
 
